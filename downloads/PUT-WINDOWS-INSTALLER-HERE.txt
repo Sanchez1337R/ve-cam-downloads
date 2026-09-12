@@ -1,0 +1,2 @@
+Place VE-Cam-Setup-v0.3.63.exe here for simple static hosting.
+For GitHub Pages, GitHub Releases is preferred for the actual installer binary.
