@@ -1,52 +1,95 @@
-# VE Cam download website
+# VE Cam Downloads
 
-This is a static site designed for GitHub Pages or any simple web host.
+Official download website and release hub for **VE Cam**.
 
-## Windows installer
+## Live website
 
-Place this file in the `downloads` folder:
+https://sanchez1337r.github.io/ve-cam-downloads/
 
-`VE-Cam-Setup-v0.3.63.exe`
+## Current releases
 
-The page is already linked to that filename and already shows this SHA-256:
+### Windows
 
-`adeb4ac0091ce9a17b8bdcdfa8bb72dc726db1895666a8970b328f946dd8405a`
+**VE Cam for Windows v0.3.63**
 
-## Android
+Installer:
 
-Replace the disabled Google Play button in `index.html` with the public Play Store URL when ready.
+https://github.com/Sanchez1337R/ve-cam-downloads/releases/download/v0.3.63/VE-Cam-Setup-v0.3.63.exe
 
-## macOS / iOS
+SHA-256:
 
-Those cards are intentionally marked Coming soon.
+```text
+adeb4ac0091ce9a17b8bdcdfa8bb72dc726db1895666a8970b328f946dd8405a
+```
 
-## Hosting recommendation
+The Windows installer is hosted through **GitHub Releases**, not inside the GitHub Pages repository.
 
-- Website: GitHub Pages
-- Large installer binaries: GitHub Releases
-- Optional custom domain later
+### Android
 
-For GitHub Releases, replace the local Windows link in `index.html` with the release asset URL.
+**VE Cam Mobile v0.3.63**
 
+Closed testing opt-in:
 
-## v2 cleanup
+https://play.google.com/apps/testing/com.vecam.nvr
 
-- Kept VE Cam logo and name at the top-left.
-- Removed the redundant top-right Downloads link.
-- Removed the three bottom informational cards.
-- Main page now stays focused on platform installers.
+Current testing goal:
 
+- At least 12 testers
+- Testers remain enrolled for 14 days
+- Each tester's Google account must first be added to the VE Cam tester list in Google Play Console
+- Testers should use that same Google account in Google Play
 
-## v3 cleanup
+### macOS
 
-- Removed “Choose the app for your device.”
-- Removed the “View downloads” button.
-- Android copy now simply says “Install VE Cam from Google Play.”
+Planned.
 
+### iPhone / iPad
 
-## v4 Android closed testing
+Planned.
 
-- Android now links directly to:
-  https://play.google.com/apps/testing/com.vecam.nvr
-- Shows that VE Cam needs at least 12 testers enrolled for 14 days.
-- Tells testers their Google account must first be added to the VE Cam tester list.
+## Repository structure
+
+```text
+assets/
+  ve-cam-logo.png
+
+downloads/
+  PUT-WINDOWS-INSTALLER-HERE.txt
+
+index.html
+styles.css
+.gitignore
+README.md
+```
+
+Windows `.exe` installers are intentionally excluded from the repository by `.gitignore` and are published as GitHub Release assets.
+
+## Website publishing
+
+GitHub Pages is configured to deploy from:
+
+```text
+Branch: main
+Folder: / (root)
+```
+
+Pushing changes to `main` updates the live download site automatically.
+
+## Updating a Windows release
+
+For a future Windows release:
+
+1. Build and validate the new VE Cam Windows installer.
+2. Create a new GitHub Release and upload the installer.
+3. Record the installer SHA-256.
+4. Update `index.html` with:
+   - version number
+   - GitHub Release download URL
+   - SHA-256
+5. Commit and push the website update.
+
+## Project
+
+VE Cam provides access to VE Cam NVR systems on the local network and through Tailscale.
+
+This repository is only for the public download website and release links.
