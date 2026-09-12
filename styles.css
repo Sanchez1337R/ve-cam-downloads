@@ -275,3 +275,107 @@ footer {
     min-height: auto;
   }
 }
+
+/* BEGIN VE CAM WEBSITE V5 HERO CLEANUP */
+
+/* Cleaner hero: smaller title/logo and less empty vertical space. */
+.hero {
+  min-height: 390px;
+  grid-template-columns: 1.55fr .55fr;
+  gap: 34px;
+  padding: 52px 0 66px;
+}
+
+.hero h1 {
+  font-size: clamp(44px, 6vw, 70px);
+  line-height: .98;
+  letter-spacing: -.045em;
+  margin: 12px 0 20px;
+}
+
+.hero-logo {
+  width: min(100%, 240px);
+  justify-self: end;
+  border-radius: 24px;
+}
+
+@media (max-width: 780px) {
+  .hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 38px 0 52px;
+  }
+
+  .hero h1 {
+    font-size: clamp(42px, 12vw, 58px);
+  }
+
+  .hero-logo {
+    width: 155px;
+    justify-self: start;
+  }
+}
+
+/* END VE CAM WEBSITE V5 HERO CLEANUP */
+
+/* VE Cam v6 - four platform cards across on desktop */
+@media (min-width: 850px) {
+  .download-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+
+  main,
+  .site-header,
+  footer {
+    max-width: 1500px !important;
+  }
+}
+
+@media (max-width: 849px) {
+  .download-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .download-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* BEGIN VE CAM WEBSITE V6 FOUR-COLUMN DESKTOP */
+
+/* Use the available desktop width so all four platform cards sit side-by-side. */
+@media (min-width: 1000px) {
+  main {
+    max-width: 1500px !important;
+    width: calc(100% - 64px) !important;
+  }
+
+  .download-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+  }
+
+  .download-card {
+    min-width: 0 !important;
+  }
+}
+
+/* Tablets keep two cards per row. */
+@media (min-width: 650px) and (max-width: 999px) {
+  .download-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* Phones use one card per row. */
+@media (max-width: 649px) {
+  .download-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* END VE CAM WEBSITE V6 FOUR-COLUMN DESKTOP */
