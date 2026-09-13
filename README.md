@@ -1,4 +1,4 @@
-# VE Cam Downloads
+﻿# VE Cam Downloads
 
 Official download website and release hub for **VE Cam**.
 
@@ -26,7 +26,7 @@ The Windows installer is hosted through **GitHub Releases**, not inside the GitH
 
 ### Android
 
-**VE Cam Mobile v0.3.63**
+**VE Cam Mobile v0.3.64**
 
 Closed testing opt-in:
 
@@ -93,3 +93,4 @@ For a future Windows release:
 VE Cam provides access to VE Cam NVR systems on the local network and through Tailscale.
 
 This repository is only for the public download website and release links.
+
