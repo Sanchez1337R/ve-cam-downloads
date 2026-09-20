@@ -26,7 +26,7 @@ The Windows installer is hosted through **GitHub Releases**, not inside the GitH
 
 ### Android
 
-**VE Cam Mobile v0.3.64**
+**VE Cam Mobile v0.3.65**
 
 Closed testing opt-in:
 
