@@ -10,16 +10,16 @@ https://sanchez1337r.github.io/ve-cam-downloads/
 
 ### Windows
 
-**VE Cam for Windows v0.3.69**
+**VE Cam for Windows v0.3.70**
 
 Installer:
 
-https://github.com/Sanchez1337R/ve-cam-downloads/releases/download/v0.3.69/VE-Cam-Setup-v0.3.69.exe
+https://github.com/Sanchez1337R/ve-cam-downloads/releases/download/v0.3.70/VE-Cam-Setup-v0.3.70.exe
 
 SHA-256:
 
 ```text
-0ef7e433809ca77eb28aeca80e8662d36ae292aa7d5b315cfc865ef6e0553823
+24d1ae4f5b6b5b2fbb7e3451146d170c1e997b84d3d86a9c5cf15c9a5f0901dc
 ```
 
 The Windows installer is hosted through **GitHub Releases**, not inside the GitHub Pages repository.
