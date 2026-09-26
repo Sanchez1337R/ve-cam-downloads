@@ -1,4 +1,4 @@
-﻿# VE Cam Downloads
+# VE Cam Downloads
 
 Official download website and release hub for **VE Cam**.
 
@@ -8,18 +8,7 @@ https://sanchez1337r.github.io/ve-cam-downloads/
 
 ## Current releases
 
-### Windows
-
-**VE Cam for Windows v0.3.63**
-
-Installer:
-
-https://github.com/Sanchez1337R/ve-cam-downloads/releases/download/v0.3.63/VE-Cam-Setup-v0.3.63.exe
-
-SHA-256:
-
-```text
-adeb4ac0091ce9a17b8bdcdfa8bb72dc726db1895666a8970b328f946dd8405a
+$10ef7e433809ca77eb28aeca80e8662d36ae292aa7d5b315cfc865ef6e0553823
 ```
 
 The Windows installer is hosted through **GitHub Releases**, not inside the GitHub Pages repository.
